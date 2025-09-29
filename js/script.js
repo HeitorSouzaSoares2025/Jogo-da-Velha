@@ -33,7 +33,7 @@ function checkjogo(id) {
             }
 
             if (pc && player === "joinha") {
-                setTimeout(function() {
+                setTimeout(function () {
                     checkjogo(jogoDopc());
                 }, 500);
             }
@@ -73,7 +73,7 @@ function jogoDopc() {
             emptyCells.push(cellId);
         }
     }
-    
+
     if (verificasrc('c5') === "transp.png") {
         return 'c5';
     } else if (emptyCells.length > 0) {
