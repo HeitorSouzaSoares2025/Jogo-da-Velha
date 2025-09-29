@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jogo da Senhora de Idade</title>
+</head>
+
+<body>
+    <h1 class="abcde">Bem-vindo ao Jogo da Velha!</h1>
+
+    <div style="margin-bottom: 20px;">
+        <label class="abc">Deseja jogar contra o computador?</label>
+        <br>
+        <input type="radio" name="opcao" id="cpu_sim" value="sim">
+        <label>Sim</label>
+        <input type="radio" name="opcao" id="cpu_nao" value="nao" checked>
+        <label>Não</label> <br><br>
+    </div>
+
+    <div id="container-principal">
+        <table>
+            <tbody>
+                <tr>
+                    <td> <img src="image/transp.png" width="180" height="180" alt="imagem" id="c1" onclick="checkjogo(this.id)"> </td>
+                    <td> <img src="image/transp.png" width="180" height="180" alt="imagem" id="c2" onclick="checkjogo(this.id)"> </td>
+                    <td> <img src="image/transp.png" width="180" height="180" alt="imagem" id="c3" onclick="checkjogo(this.id)"> </td>
+                </tr>
+
+                <tr>
+                    <td> <img src="image/transp.png" width="180" height="180" alt="imagem" id="c4" onclick="checkjogo(this.id)"> </td>
+                    <td> <img src="image/transp.png" width="180" height="180" alt="imagem" id="c5" onclick="checkjogo(this.id)"> </td>
+                    <td> <img src="image/transp.png" width="180" height="180" alt="imagem" id="c6" onclick="checkjogo(this.id)"> </td>
+                </tr>
+
+                <tr>
+                    <td> <img src="image/transp.png" width="180" height="180" alt="imagem" id="c7" onclick="checkjogo(this.id)"> </td>
+                    <td> <img src="image/transp.png" width="180" height="180" alt="imagem" id="c8" onclick="checkjogo(this.id)"> </td>
+                    <td> <img src="image/transp.png" width="180" height="180" alt="imagem" id="c9" onclick="checkjogo(this.id)"> </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div id="div-botoes">
+            <button id="btn-reiniciar" onclick="reiniciarJogo()">Jogar Novamente</button>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
+
