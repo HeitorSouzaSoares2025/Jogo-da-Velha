@@ -1,4 +1,4 @@
-var player = "xzao";
+var player = "retardadomorgan";  // jogador humano
 var numjog = 0;
 var jogando = true;
 
@@ -14,11 +14,11 @@ function checkjogo(id) {
     var pc = document.getElementById('cpu_sim').checked;
 
     if (opt === "transp.png") {
-        document.getElementById(id).src = "image/" + player + ".png";
+        document.getElementById(id).src = "image/" + player + ".jpg";
         numjog++;
 
         if (wincheck()) {
-            alert("Fim de jogo! O " + (player === "xzao" ? "X" : "O") + " venceu!");
+            alert("Fim de jogo! " + (player === "retardadomorgan" ? "Retardado Morgan" : "Trinity") + " venceu!");
             jogando = false;
         } else if (numjog >= 9) {
             alert("Fim de jogo! Deu velha!");
@@ -26,13 +26,13 @@ function checkjogo(id) {
         }
 
         if (jogando) {
-            if (player === "xzao") {
-                player = "joinha";
+            if (player === "retardadomorgan") {
+                player = "trinity";
             } else {
-                player = "xzao";
+                player = "retardadomorgan";
             }
 
-            if (pc && player === "joinha") {
+            if (pc && player === "trinity") {
                 setTimeout(function () {
                     checkjogo(jogoDopc());
                 }, 500);
@@ -83,12 +83,10 @@ function jogoDopc() {
 }
 
 function reiniciarJogo() {
-    // Reseta as variáveis do jogo
-    player = "xzao";
+    player = "retardadomorgan";
     numjog = 0;
     jogando = true;
 
-    // Reseta todas as imagens para 'transp.png'
     for (let i = 1; i <= 9; i++) {
         document.getElementById('c' + i).src = "image/transp.png";
     }
