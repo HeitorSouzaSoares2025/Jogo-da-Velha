@@ -18,10 +18,10 @@ function checkjogo(id) {
         numjog++;
 
         if (wincheck()) {
-            alert("Fim de jogo! " + (player === "retardadomorgan" ? "Retardado Morgan" : "Trinity") + " venceu!");
+            alert("ITS OVER!!! " + (player === "retardadomorgan" ? "Retardado Morgan" : "Trinity") + " venceu!");
             jogando = false;
         } else if (numjog >= 9) {
-            alert("Fim de jogo! Deu velha!");
+            alert("Fim de jogo! Deu NADA!!");
             jogando = false;
         }
 
@@ -91,3 +91,4 @@ function reiniciarJogo() {
         document.getElementById('c' + i).src = "image/transp.png";
     }
 }
+
