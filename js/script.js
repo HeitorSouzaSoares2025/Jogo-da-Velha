@@ -14,11 +14,11 @@ function checkjogo(id) {
     var pc = document.getElementById('cpu_sim').checked;
 
     if (opt === "transp.png") {
-        document.getElementById(id).src = "image/" + player + ".jpg";
+        document.getElementById(id).src = "imagens/" + player + ".jpg";
         numjog++;
 
         if (wincheck()) {
-            alert("ITS OVER!!! " + (player === "retardadomorgan" ? "Retardado Morgan" : "Trinity") + " venceu!");
+            alert("BRUTAL! " + (player === "retardadomorgan" ? "Retardado Morgan" : "Trinity") + " venceu!");
             jogando = false;
         } else if (numjog >= 9) {
             alert("Fim de jogo! Deu NADA!!");
@@ -91,4 +91,5 @@ function reiniciarJogo() {
         document.getElementById('c' + i).src = "image/transp.png";
     }
 }
+
 
